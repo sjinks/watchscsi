@@ -1,0 +1,10 @@
+# Last Modified: Sat Apr  2 16:23:56 2016
+#include <tunables/global>
+
+/usr/local/bin/watchscsi {
+  #include <abstractions/base>
+
+  /sys/devices/pci0000:00/0000:00:02.0/0000:02:00.0/host0/target0:2:0/0:2:0:0/state rw,
+  /usr/local/bin/watchscsi mr,
+
+}
